@@ -1,0 +1,6 @@
+Build the unit test framework:
+
+http://www.boost.org/doc/libs/develop/libs/test/doc/html/boost_test/adv_scenarios/build_utf.html
+
+$ ./bootstrap.sh
+$ ./b2 --address-model=64 architecture=x86 --with-test link=shared --prefix=$(BOOST_ROOT)/build/test install
