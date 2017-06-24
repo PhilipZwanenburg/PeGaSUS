@@ -1,0 +1,37 @@
+# Doxyfile 1.8.9.1
+
+# This file describes the settings to be used by the documentation system doxygen (www.doxygen.org) for a project.
+
+# Project related configuration options ----------------------------------------
+
+PROJECT_NAME   = @CMAKE_PROJECT_NAME@
+PROJECT_NUMBER = "@MADNESS_VERSION@"
+PROJECT_LOGO   =
+
+OUTPUT_DIRECTORY = ./
+#FULL_PATH_NAMES = NO
+
+CASE_SENSE_NAMES = YES
+SORT_BRIEF_DOCS = YES
+SORT_MEMBERS_CTORS_1ST = YES
+
+#WARN_LOGFILE = doxygen-warnings.txt
+
+
+INPUT     = "@PROJECT_SOURCE_DIR@/doc" \
+            "@PROJECT_SOURCE_DIR@/src"
+RECURSIVE = YES
+EXCLUDE   = 
+FILE_PATTERNS = *.dox *.h *.cpp *.cc
+
+IMAGE_PATH =
+STRIP_CODE_COMMENTS = NO
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION = YES
+
+HTML_COLORSTYLE_HUE = 220
+HTML_COLORSTYLE_SAT = 100
+HTML_COLORSTYLE_GAMMA = 80
+
+TEX_BIB_STYLE = plain
+
