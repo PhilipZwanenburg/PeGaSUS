@@ -20,24 +20,24 @@ addons:
     #   https://github.com/travis-ci/apt-source-whitelist/blob/master/ubuntu.json
     sources:
     - ubuntu-toolchain-r-test
-    - sourceline: 'deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial main'
+#    - sourceline: 'deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial main'
     packages:
     - g++-7
-    - clang-6.0
-    - lldb-6.0
-    - lld-6.0
+#    - clang-6.0
+#    - lldb-6.0
+#    - lld-6.0
     - valgrind
 os:
   - linux
 language: cpp
 compiler:
   - g++
-  - clang
+#  - clang
 script: ./travis.sh
 env:
   matrix:
     - PEGASUS_CMAKE_RUN=gnu-7_debug
-    - PEGASUS_CMAKE_RUN=clang-6_debug
+#    - PEGASUS_CMAKE_RUN=clang-6_debug
 #    - GTEST_TARGET=googletest SHARED_LIB=OFF STATIC_LIB=ON CMAKE_PKG=OFF BUILD_TYPE=debug   VERBOSE_MAKE=true VERBOSE
 #    - GTEST_TARGET=googlemock SHARED_LIB=OFF STATIC_LIB=ON CMAKE_PKG=OFF BUILD_TYPE=debug   VERBOSE_MAKE=true VERBOSE
 #    - GTEST_TARGET=googlemock SHARED_LIB=OFF STATIC_LIB=ON CMAKE_PKG=OFF BUILD_TYPE=debug CXX_FLAGS=-std=c++11  VERBOSE_MAKE=true VERBOSE
