@@ -1,4 +1,5 @@
-# PeGaSUS
+# PeGaSUS <a target="_blank" href="https://travis-ci.org/PhilipZwanenburg/PeGaSUS">![Travis status][badge.Travis]</a>
+
 Petrov-Galerkin Solver for Unstructured Simulations
 
 This project aims to provide a Finite Element implementation capable of simulating various partial

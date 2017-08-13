@@ -22,7 +22,7 @@ install:
     fi
   - cmake --version
 
-  # Install Doxygen
+  # Install Doxygen (Graphviz does not come with the `dot` executable...)
 # Fix the if condition.
 #    if [[ "${DOCUMENTATION}" == "true" ]]; then
   - |
