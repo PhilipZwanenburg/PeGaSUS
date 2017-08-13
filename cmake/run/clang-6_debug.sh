@@ -1,13 +1,12 @@
-TOP_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+TOP_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../.."
 
 # Modifiable parameters ****************************************************** #
 BUILD_DIR=${TOP_DIR}/build
 
 CMAKE_BUILD_TYPE=Debug
-TOOLCHAIN_FILE=default_gnu.cmake
+TOOLCHAIN_FILE=clang-6.cmake
 
 # End Modifiable parameters ************************************************** #
-
 
 
 mkdir -p ${BUILD_DIR} && cd ${BUILD_DIR}
