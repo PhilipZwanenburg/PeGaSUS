@@ -14,7 +14,12 @@
 				master
 			</a>
 		</th>
-		<th>To Do</th>
+		<th>
+			<a href="https://badge.fury.io/">
+				<img src="https://badge.fury.io/gh/PhilipZwanenburg%2FPeGaSUS.svg"
+				     title="version">
+			</a>
+		</th>
 		<th>
 			<a href="https://travis-ci.org/PhilipZwanenburg/PeGaSUS">
 				<img src="https://travis-ci.org/PhilipZwanenburg/PeGaSUS.svg?branch=master"
@@ -41,9 +46,15 @@ The discretization employs an adaptive T-spline approximation basis which allows
 representation (as defined according to the reference CAD model) and is motivated by the
 IsoGeometric Analysis paradigm.
 
-\todo Add note about unit/integration tests for understanding segments of the code.
-\todo Add supported PDEs
-\todo Add list of software being used
+# Supported PDEs
+
+
+
+# Understanding the Code
+
+Unit and integration tests may be considered as minimal working examples demonstrating code
+functionality.
+
 
 # License
 
