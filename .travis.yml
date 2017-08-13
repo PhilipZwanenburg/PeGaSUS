@@ -49,6 +49,7 @@ addons:
 #    - clang-6.0
 #    - lldb-6.0
 #    - lld-6.0
+    - lcov
     - valgrind
 os:
   - linux
@@ -56,16 +57,22 @@ language: cpp
 compiler:
   - g++
 #  - clang
-script: bash travis.sh
+script: ./travis.sh
 env:
   matrix:
     - PEGASUS_CMAKE_RUN=gnu-7_debug
 #    - PEGASUS_CMAKE_RUN=clang-6_debug
-#    - GTEST_TARGET=googletest SHARED_LIB=OFF STATIC_LIB=ON CMAKE_PKG=OFF BUILD_TYPE=debug   VERBOSE_MAKE=true VERBOSE
-#    - GTEST_TARGET=googlemock SHARED_LIB=OFF STATIC_LIB=ON CMAKE_PKG=OFF BUILD_TYPE=debug   VERBOSE_MAKE=true VERBOSE
-#    - GTEST_TARGET=googlemock SHARED_LIB=OFF STATIC_LIB=ON CMAKE_PKG=OFF BUILD_TYPE=debug CXX_FLAGS=-std=c++11  VERBOSE_MAKE=true VERBOSE
-#    - GTEST_TARGET=googletest SHARED_LIB=ON  STATIC_LIB=ON CMAKE_PKG=ON  BUILD_TYPE=release VERBOSE_MAKE=false
-#    - GTEST_TARGET=googlemock SHARED_LIB=ON  STATIC_LIB=ON CMAKE_PKG=ON  BUILD_TYPE=release VERBOSE_MAKE=false
+
+after_success:
+    # Creating report
+  - cd ${TRAVIS_BUILD_DIR}
+  - lcov --directory . --capture --output-file coverage.info # capture coverage info
+  - lcov --remove coverage.info '/usr/*'      --output-file coverage.info # filter out system
+  - lcov --remove coverage.info '/external/*' --output-file coverage.info # filter out external
+  - lcov --list coverage.info #debug info
+  # Uploading report to CodeCov
+  - bash <(curl -s https://codecov.io/bash) || echo "Codecov did not collect coverage reports"
+
 notifications:
   email: false
 sudo: false

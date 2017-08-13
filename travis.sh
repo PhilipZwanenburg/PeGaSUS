@@ -1,5 +1,5 @@
 #!/bin/bash
-set -ex
+set -eux
 
 TOP_DIR=${PWD}
 CMAKE_RUN=${TOP_DIR}/cmake/run/
@@ -13,3 +13,4 @@ cd $CMAKE_RUN
 cd ${TOP_DIR}/build
 make
 CTEST_OUTPUT_ON_FAILURE=1 make test
+make PeGaSUS_coverage

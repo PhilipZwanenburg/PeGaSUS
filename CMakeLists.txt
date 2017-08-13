@@ -11,7 +11,7 @@ set(PeGaSUS_VERSION "${PeGaSUS_VERSION_MAJOR}.${PeGaSUS_VERSION_MINOR}")
 
 
 # Global includes
-list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
+list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/modules")
 include(functions)
 
 
@@ -38,4 +38,17 @@ option(pegasus_build_tests "Build all of pagasus' own tests." ON)
 if(pegasus_build_tests)
 	include(CTest)
 	add_test(PegasusRuns pegasus)
+endif()
+
+# add coverage
+option(pegasus_code_coverage "Check code coverage of pagasus." ON)
+if(pegasus_code_coverage)
+	include(CodeCoverage)
+	SET(CMAKE_CXX_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
+
+	# A `space` separated list may be specified for file patterns to be removed.
+	setup_target_for_coverage(${PROJECT_NAME}_coverage pegasus coverage
+	                          "/external* placehold*")
+
+	message("cxx flags: ${CMAKE_CXX_FLAGS}")
 endif()
