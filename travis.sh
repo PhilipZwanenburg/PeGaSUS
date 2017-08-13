@@ -1,6 +1,5 @@
-#!/usr/bin/env sh
-set -evx
-env | sort
+#!/bin/sh
+set -ex
 
 bash cmake/run/$PEGASUS_CMAKE_RUN.sh
 #cmake -Dpegasus_build_tests=ON \
