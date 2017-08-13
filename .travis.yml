@@ -33,7 +33,7 @@ language: cpp
 compiler:
   - g++
 #  - clang
-script: ./travis.sh
+script: bash travis.sh
 env:
   matrix:
     - PEGASUS_CMAKE_RUN=gnu-7_debug
