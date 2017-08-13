@@ -4,3 +4,4 @@ Use c++ sort for connectivity set up (https://stackoverflow.com/questions/138046
 
 
 Code coverage: https://coveralls.io/welcome
+Include clang as in the [boostorg/hana/.travis.yml](https://github.com/boostorg/hana/blob/master/.travis.yml)
