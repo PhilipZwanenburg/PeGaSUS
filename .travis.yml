@@ -17,7 +17,7 @@ install:
     else
       brew upgrade cmake || brew install cmake
     fi
-- cmake --version
+  - cmake --version
 addons:
   apt:
     # List of whitelisted in travis packages for ubuntu-precise can be found here:
