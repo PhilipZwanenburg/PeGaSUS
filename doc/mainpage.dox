@@ -1,0 +1,32 @@
+/** \file
+
+\mainpage
+
+These pages serve as the main programmer's reference manual for PeGaSUS and 
+were automatically generated from the source using Doxygen.
+
+A good place to start is the <a href="pages.html">pages page</a>,
+which provides a getting started file. \todo Add this file.
+
+The <a href="https://github.com/PhilipZwanenburg/PeGaSUS/tree/master">project home</a>
+contains additional information relating to the code functionality and status.
+
+\section s1_mainpage Software used by PeGaSUS
+
+We would like to express our thanks to these other projects whose software we employ:
+	- <a href="http://gcc.gnu.org">GCC</a>
+	- <a href="https://cmake.org/">CMake</a>
+	- <a href="http://www.doxygen.org">Doxygen</a>
+	- <a href="http://www.graphviz.org">Graphviz</a>
+	- <a href="https://travis-ci.org/">Travis CI</a>
+	- <a href="https://codecov.io/gh">Codecov</a>
+	- <a href="https://github.com/google/googletest">Google Test</a>
+	- <a href="http://www.mcs.anl.gov/research/projects/mpich2">MPICH</a>
+
+\todo Update the list.
+
+\section s2_mainpage License
+
+The code is licensed under the <a href="md_LICENSE.html">GNU GPLv3</a>.
+
+*/

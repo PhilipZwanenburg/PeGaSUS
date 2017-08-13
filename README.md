@@ -1,33 +1,34 @@
 # Petrov-Galerkin Solver for Unstructured Simulations
 
 <table>
-	<tbody>
-		<tr>
-			<th>Branch</th>
-			<th>Version</th>
-			<th>Linux/macOS</th>
-			<th>Coverage</th>
-			<th>Documentation</th>
-			<th>Matrix</th>
-		</tr>
-		<tr>
-			<th>
-				<a href="https://github.com/PhilipZwanenburg/PeGaSUS/tree/master">
-					<div>master</div>
-				</a>
-			</th>
-			<th>To Do</th>
-			<th>
-				<a href="https://travis-ci.org/PhilipZwanenburg/PeGaSUS">
-					<img src="https://travis-ci.org/PhilipZwanenburg/PeGaSUS.svg?branch=master"
-					     title="build status">
-				</a>
-			</th>
-			<th>To Do</th>
-			<th>To Do</th>
-			<th>To Do</th>
-		</tr>
-	</tbody>
+	<tr>
+		<th>Branch</th>
+		<th>Version</th>
+		<th>Linux/macOS</th>
+		<th>Coverage</th>
+		<th>Documentation</th>
+	</tr>
+	<tr>
+		<th>
+			<a href="https://github.com/PhilipZwanenburg/PeGaSUS/tree/master">
+				master
+			</a>
+		</th>
+		<th>To Do</th>
+		<th>
+			<a href="https://travis-ci.org/PhilipZwanenburg/PeGaSUS">
+				<img src="https://travis-ci.org/PhilipZwanenburg/PeGaSUS.svg?branch=master"
+				     title="build status">
+			</a>
+		</th>
+		<th>
+			<a href="https://codecov.io/gh/PhilipZwanenburg/PeGaSUS/branch/master">
+				<img src="https://codecov.io/gh/PhilipZwanenburg/PeGaSUS/branch/master/graph/badge.svg"
+				     title="build status">
+			</a>
+		</th>
+		<th>To Do</th>
+	</tr>
 </table>
 
 
@@ -43,3 +44,7 @@ IsoGeometric Analysis paradigm.
 \todo Add note about unit/integration tests for understanding segments of the code.
 \todo Add supported PDEs
 \todo Add list of software being used
+
+# License
+
+The code is licensed under the [GNU GPLv3](LICENSE.md).
