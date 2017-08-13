@@ -3,8 +3,8 @@
 # This file can be validated on:
 # http://lint.travis-ci.org/
 
-before_install:
-  - wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add -
+#before_install:
+#  - wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add -
 install:
 #- if [ "$CXX" = "g++" ]; then export CXX="g++-4.9" CC="gcc-4.9"; fi
 #- if [ "$CXX" = "clang++" ] && [ "$TRAVIS_OS_NAME" = "linux" ]; then export CXX="clang++-3.7" CC="clang-3.7"; fi
