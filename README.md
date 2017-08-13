@@ -1,4 +1,4 @@
-# PeGaSUS
+# Petrov-Galerkin Solver for Unstructured Simulations
 
 <table>
 	<tbody>
@@ -18,8 +18,9 @@
 			</th>
 			<th>To Do</th>
 			<th>
-				<a href="https://travis-ci.org/PhilipZwanenburg/PeGaSUS.svg?branch=master">
-					<img src="https://travis-ci.org/PhilipZwanenburg/PeGaSUS.svg?branch=master" title="build status">
+				<a href="https://travis-ci.org/PhilipZwanenburg/PeGaSUS">
+					<img src="https://travis-ci.org/PhilipZwanenburg/PeGaSUS.svg?branch=master"
+					     title="build status">
 				</a>
 			</th>
 			<th>To Do</th>
@@ -30,8 +31,7 @@
 </table>
 
 
-
-Petrov-Galerkin Solver for Unstructured Simulations
+# Overview
 
 This project aims to provide a Finite Element implementation capable of simulating various partial
 differential equations on geometrically complex domains using the Petrov-Galerkin method.

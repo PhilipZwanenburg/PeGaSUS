@@ -1,8 +1,15 @@
-#!/bin/sh
+#!/bin/bash
 set -ex
 
-bash cmake/run/$PEGASUS_CMAKE_RUN.sh
+TOP_DIR=${PWD}
+CMAKE_RUN=${TOP_DIR}/cmake/run/
+
+# Run `cmake`
+cd $CMAKE_RUN
+./$PEGASUS_CMAKE_RUN.sh
 #cmake -Dpegasus_build_tests=ON \
-cd build
+
+# Run `make` and `make test`
+cd ${TOP_DIR}/build
 make
 CTEST_OUTPUT_ON_FAILURE=1 make test

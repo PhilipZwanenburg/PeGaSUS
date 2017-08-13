@@ -1,6 +1,10 @@
-TOP_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../.."
+#!/bin/bash
+
+TOP_DIR="${PWD}/../.."
+
 
 # Modifiable parameters ****************************************************** #
+
 BUILD_DIR=${TOP_DIR}/build
 
 CMAKE_BUILD_TYPE=Debug
