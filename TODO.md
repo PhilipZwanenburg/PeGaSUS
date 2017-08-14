@@ -4,4 +4,3 @@
 
 
 \todo Include clang as in the [boostorg/hana/.travis.yml](https://github.com/boostorg/hana/blob/master/.travis.yml)
-\todo Add versioning: http://semver.org (see boostorg/hana again)

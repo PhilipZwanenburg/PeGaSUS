@@ -13,13 +13,14 @@ contains additional information relating to the code functionality and status.
 
 \section s1_mainpage Software used by PeGaSUS
 
-We would like to express our thanks to these other projects whose software we employ:
+We would like to express our thanks to these other projects whose software we are using:
 	- <a href="http://gcc.gnu.org">GCC</a>
 	- <a href="https://cmake.org/">CMake</a>
 	- <a href="http://www.doxygen.org">Doxygen</a>
 	- <a href="http://www.graphviz.org">Graphviz</a>
 	- <a href="https://travis-ci.org/">Travis CI</a>
 	- <a href="https://codecov.io/gh">Codecov</a>
+	- <a href="https://codedocs.xyz/">CodeDocs</a>
 	- <a href="https://github.com/google/googletest">Google Test</a>
 	- <a href="http://www.mcs.anl.gov/research/projects/mpich2">MPICH</a>
 

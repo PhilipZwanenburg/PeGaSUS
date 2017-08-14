@@ -29,10 +29,15 @@
 		<th>
 			<a href="https://codecov.io/gh/PhilipZwanenburg/PeGaSUS/branch/master">
 				<img src="https://codecov.io/gh/PhilipZwanenburg/PeGaSUS/branch/master/graph/badge.svg"
-				     title="build status">
+				     title="coverage">
 			</a>
 		</th>
-		<th>To Do</th>
+		<th>
+			<a href="https://codedocs.xyz/PhilipZwanenburg/PeGaSUS/">
+				<img src="https://codedocs.xyz/PhilipZwanenburg/PeGaSUS.svg"
+				     title="documentation">
+			</a>
+		</th>
 	</tr>
 </table>
 
@@ -48,7 +53,7 @@ IsoGeometric Analysis paradigm.
 
 # Supported PDEs
 
-
+To be updated.
 
 # Understanding the Code
 

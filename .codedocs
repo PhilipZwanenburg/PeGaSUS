@@ -1,0 +1,2 @@
+EXCLUDE = README.md
+FILE_PATTERNS = *.cpp *.hpp *.ipp *.md *.dox
