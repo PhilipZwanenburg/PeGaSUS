@@ -57,7 +57,7 @@ To be updated.
 
 # Understanding the Code
 
-Unit and integration tests may be considered as minimal working examples demonstrating code
+Unit and integration tests may be considered to be minimal working examples demonstrating code
 functionality.
 
 
