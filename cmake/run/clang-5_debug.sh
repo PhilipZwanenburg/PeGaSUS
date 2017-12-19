@@ -8,7 +8,7 @@ TOP_DIR="${PWD}/../.."
 BUILD_DIR=${TOP_DIR}/build
 
 CMAKE_BUILD_TYPE=Debug
-TOOLCHAIN_FILE=clang-6.cmake
+TOOLCHAIN_FILE=clang-5.cmake
 
 # End Modifiable parameters ************************************************** #
 

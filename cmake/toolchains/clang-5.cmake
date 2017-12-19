@@ -4,7 +4,7 @@
 
 
 # Compilers
-set(CMAKE_CXX_COMPILER "/usr/bin/clang++-6.0")
+set(CMAKE_CXX_COMPILER "/usr/bin/clang++-5.0")
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED on)
